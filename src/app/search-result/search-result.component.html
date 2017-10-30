@@ -1,0 +1,7 @@
+<div *ngIf="searchRes">
+  <h1>Search Restlt of {{searchStr}}</h1>
+  <p class="content lead" *ngFor="let res of searchRes" [innerHTML]="res.Result"></p>
+
+</div>
+
+<!--dangerouslySetInnerHTML={{__html:this.props.results.Result}}-->
